@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: "Poppins", sans-serif;
+}
 .my-container {
   @apply px-5 max-w-7xl mx-auto;
 }
