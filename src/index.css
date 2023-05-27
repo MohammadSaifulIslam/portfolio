@@ -24,3 +24,10 @@ body {
 .my-btn {
   @apply px-6 py-2 tracking-wide border-2 font-medium duration-500 text-primary border-primary rounded-3xl hover:bg-primary hover:text-white active:scale-105;
 }
+
+.contact-input {
+  @apply py-3 px-5 w-full text-white border-b-2 border-transparent focus:border-primary  border-0 focus:outline-0 bg-[#101419] contact-shadow;
+}
+.contact-shadow {
+  box-shadow: 2.5px 2.5px 7.5px #101419;
+}
