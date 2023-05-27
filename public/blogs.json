@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Understanding the JavaScript Event Loop",
+    "blog": "In this comprehensive blog post, we dive into the JavaScript event loop and explore its working mechanism in detail. The event loop is a crucial concept in JavaScript as it enables asynchronous programming and ensures smooth execution of code. We'll discuss the event queue, the call stack, and how JavaScript handles asynchronous tasks. By understanding the event loop, you'll gain insights into how JavaScript manages concurrent operations and how to write efficient and responsive code. Join us on this journey as we demystify the inner workings of the JavaScript event loop.",
+    "readingMinutes": 5,
+    "image": "https://www.devtip.co/content/images/2023/01/BTm1H.png"
+  },
+  {
+    "id": 2,
+    "title": "Getting Started with MongoDB: A NoSQL Database",
+    "blog": "Today we provide a thorough introduction to MongoDB, one of the leading NoSQL databases. We'll cover the basics of MongoDB, including document-based data storage, querying data using MongoDB's flexible query language, indexing for improved performance, and integrating MongoDB with Node.js using the MongoDB Node.js driver. Whether you're a beginner starting your journey in NoSQL databases or an experienced developer curious about MongoDB, this blog will equip you with the essential knowledge to get started. Join us as we explore the power and versatility of MongoDB!",
+    "readingMinutes": 7,
+    "image": "https://webimages.mongodb.com/_com_assets/cms/kuzt9r42or1fxvlq2-Meta_Generic.png"
+  },
+  {
+    "id": 3,
+    "title": "Building Web Applications with Express.js",
+    "blog": "Express.js is a powerful and widely-used Node.js framework for building web applications. We'll cover the core concepts of Express.js, including routing, middleware, handling requests and responses, and integrating Express.js with databases like MongoDB. With practical examples and step-by-step explanations, we'll guide you through building a basic web application using Express.js. Whether you're new to Express.js or want to deepen your understanding, this blog provides a solid foundation to harness the power of this framework. Join us as we explore the world of web development with Express.js!",
+    "readingMinutes": 5,
+    "image": "https://cdn.educba.com/academy/wp-content/uploads/2020/03/What-is-ExpressJS.jpg.webp"
+  },
+  {
+    "id": 5,
+    "title": "Making Your Website Accessible: Best Practices and Guidelines",
+    "blog": "In this blog post, we delve into the importance of website accessibility and provide practical tips and guidelines for making your websites inclusive to all users. We'll cover the fundamentals of accessibility, including semantic HTML, ARIA roles, keyboard navigation, and alt text for images. Additionally, we'll explore tools and resources that can help you evaluate and improve the accessibility of your websites. By prioritizing accessibility, you'll ensure that all users can access and navigate your content, regardless of their abilities. Join us on this journey to create a more inclusive web!",
+    "readingMinutes": 4,
+    "image": "https://res.cloudinary.com/practicaldev/image/fetch/s--LC6zeSG---/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/mxxlq2tcfgyw5t2a1arm.jpeg"
+  },
+  {
+    "id": 4,
+    "title": "Managing State with React Hooks: A Comprehensive Guide",
+    "blog": "In this comprehensive blog post, we explore React Hooks, a revolutionary feature introduced in React. We'll focus on the useState and useEffect hooks and explain how they transform the way we manage state and side effects in React applications. Through detailed explanations and practical examples, we'll guide you through various scenarios where hooks can enhance your React development workflow. Whether you're a beginner or an experienced React developer, this blog is your go-to resource for understanding and mastering React Hooks. Join us as we unlock the power of hooks and take your React applications to the next level!",
+    "readingMinutes": 3,
+    "image": "https://example.com/react-hooks-image.jpg"
+  }
+]
