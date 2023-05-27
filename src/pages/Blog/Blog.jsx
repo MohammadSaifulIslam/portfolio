@@ -25,11 +25,11 @@ const Blog = () => {
                             <img src={blogData.image} alt="blog image" className='rounded-xl h-96 w-full object-cover' />
                             <div className='text-white my-auto'>
                                 <h2 className='text-2xl font-semibold'>{blogData.title}</h2>
-                                <div className="flex justify-between mt-10 mb-5 text-neutral">
+                                <div className="flex justify-between mt-10 mb-5 text-white">
                                     <p>April 10, 2023</p>
                                     <p>min {blogData.readingMinutes}</p>
                                 </div>
-                                <p>{blogData.blog.slice(0,415)}.</p>
+                                <p className='text-neutral'>{blogData.blog.slice(0,415)}.</p>
                             </div>
                         </div>)
                     }
