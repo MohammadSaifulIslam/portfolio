@@ -5,6 +5,23 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+.sub-title {
+  font-size: 110px;
+  font-weight: 800;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px #343a40;
+  position: relative;
+}
+
 .my-container {
-  @apply px-5 max-w-7xl mx-auto;
+  @apply px-5 max-w-6xl mx-auto;
+}
+
+.my-shadow {
+  box-shadow: inset 5px 5px 10px 1px #101419, inset -5px -5px 10px 1px #101419;
+}
+.my-btn {
+  @apply px-6 py-2 tracking-wide border-2 font-medium duration-500 text-primary border-primary rounded-3xl hover:bg-primary hover:text-white active:scale-105;
 }

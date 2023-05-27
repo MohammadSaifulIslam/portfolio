@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
     return (
         <section className="bg-accent text-white py-4">
-            <nav className="my-container navbar ">
+            <nav className="px-5 max-w-7xl mx-auto navbar ">
                 <div className="w-full flex justify-between">
                     <Link to='/' className="text-2xl text-primary font-semibold">Saif</Link>
                     <div className="dropdown dropdown-end">

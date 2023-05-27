@@ -1,7 +1,7 @@
 const Banner = () => {
     return (
         <section className="bg-secondary">
-            <div className="my-container h-[calc(100vh-96px)]  text-left flex flex-col justify-center text-white space-y-4">
+            <div className="my-container min-h-[calc(100vh-96px)] text-left flex flex-col justify-center text-white space-y-4">
                 <h4 className="text-xl text-primary font-medium">Hello, I am </h4>
                 <h1 className="text-7xl font-bold">MD. Saiful Islam</h1>
                 <h2 className="text-6xl font-semibold text-neutral">I love to know the unknown.</h2>
