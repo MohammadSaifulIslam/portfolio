@@ -2,7 +2,7 @@ import { HiOutlineLocationMarker, HiOutlineMail, HiOutlinePhone } from "react-ic
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 const Contact = () => {
     return (
-        <section className="py-20 bg-secondary">
+        <section className="py-20 bg-accent">
             <div className="my-container">
                 <SectionTitle
                     subTitle={'Contact'}

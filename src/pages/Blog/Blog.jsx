@@ -10,7 +10,7 @@ const Blog = () => {
             .then(data => setBlogs(data))
     }, [])
     return (
-        <section className='py-20 bg-accent'>
+        <section className='py-20 bg-secondary'>
             <div className='my-container'>
                 <SectionTitle
                     subTitle={'My Blogs'}

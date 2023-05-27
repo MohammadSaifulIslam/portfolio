@@ -5,7 +5,7 @@ import project3 from '../../assets/img/projects/project (3).png';
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 const Projects = () => {
     return (
-        <section className="py-20 bg-secondary">
+        <section className="py-20 bg-accent">
 
             <div className="my-container">
                 <SectionTitle

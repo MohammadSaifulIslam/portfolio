@@ -1,3 +1,5 @@
+import { FaCode } from "react-icons/fa";
+import { HiOutlineLocationMarker, HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
 import profile from '../../assets/img/profile.jpg';
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 
@@ -16,15 +18,15 @@ const About = () => {
                             <p>By learning new technologies, I like to develop my skills. I love to bias in action with a passion for provlem solving.</p>
                         </div>
                         <div className='my-shadow p-10 mt-10 '>
-                            <div className='grid md:grid-cols-2 gap-5'>
-                                <div className=''>
-                                    <p>saiful37471@gmail.com</p>
-                                    <p>++8801875924990</p>
+                            <div className='grid md:grid-cols-2 md:gap-5'>
+                                <div className='space-y-1'>
+                                    <p className="flex gap-3"><HiOutlineMail className='w-5 h-5 text-primary' /> saiful37471@gmail.com</p>
+                                    <p className="flex gap-3"><HiOutlinePhone className='w-5 h-5 text-primary' /> ++8801875924990</p>
 
                                 </div>
-                                <div>
-                                    <p>Dhaka,Bangladesh</p>
-                                    <p>Coding</p>
+                                <div className='space-y-1'>
+                                    <p className="flex gap-3"><FaCode className='w-5 h-5 text-primary' /> Coding</p>
+                                    <p className="flex gap-3"><HiOutlineLocationMarker className='w-5 h-5 text-primary' /> Dhaka,Bangladesh</p>
                                 </div>
                             </div>
                             <button className='my-btn mt-5'>Resume</button>

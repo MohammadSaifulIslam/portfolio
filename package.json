@@ -10,6 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@mantine/core": "^6.0.11",
+    "@mantine/hooks": "^6.0.11",
     "daisyui": "^2.51.6",
     "firebase": "^9.22.0",
     "localforage": "^1.10.0",
@@ -19,7 +22,8 @@
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.11.1",
     "sort-by": "^1.2.0",
-    "TagCloud": "^2.3.2"
+    "TagCloud": "^2.3.2",
+    "typed.js": "^2.0.16"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
