@@ -17,22 +17,23 @@ const Main = () => {
             top: y - height / 2
         })
     }
-    const handleMouseLeave= ()=>{
+    const handleMouseLeave = () => {
         setOpacity(0)
     }
     console.log(position)
     return (
-        <div onMouseMove={handleMouseMove}
-        onMouseLeave={handleMouseLeave}
-        className='w-full h-full relative overflow-hidden' 
-        ref={containerEl}>
+        <div
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+            className='w-full h-full relative overflow-hidden'
+            ref={containerEl}
+        >
             <Navbar />
             <ScrollRestoration />
-
             <Outlet />
             <div
                 ref={circle}
-                className='absolute bg-primary bg-opacity-80 scale-[1.5] blur-3xl w-20 h-20 rounded-full duration-300 z-10 transition-opacity hidden md:block'
+                className='absolute bg-primary bg-opacity-80 scale-[1.5] blur-3xl w-20 h-20 rounded-full duration-300 -z-10 transition-opacity hidden md:block'
                 style={{
                     top: position.top,
                     left: position.left,

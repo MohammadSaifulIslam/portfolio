@@ -17,7 +17,7 @@ const About = () => {
                             <p>I was also looking for that, who am I really? After a lot of hard work, I found myself as a web developer in 2023.</p>
                             <p>By learning new technologies, I like to develop my skills. I love to bias in action with a passion for provlem solving.</p>
                         </div>
-                        <div className='my-shadow p-10 mt-10 '>
+                        <div className='my-shadow p-10 mt-10 z-50'>
                             <div className='grid md:grid-cols-2 md:gap-5'>
                                 <div className='space-y-1'>
                                     <p className="flex gap-3"><HiOutlineMail className='w-5 h-5 text-primary' /> saiful37471@gmail.com</p>
