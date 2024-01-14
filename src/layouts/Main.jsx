@@ -1,46 +1,33 @@
-import { useElementSize, useMouse } from '@mantine/hooks';
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { Toaster } from "react-hot-toast";
 import { Outlet, ScrollRestoration } from "react-router-dom";
+import Loading from "../components/Loading/Loading";
+import Footer from "../pages/Footer/Footer";
 import Navbar from "../pages/Shared/Navbar/Navbar";
 
 
 const Main = () => {
-    const { ref: circle, width, height } = useElementSize();
-    const { ref: containerEl, x, y } = useMouse();
-    const [position, setPotion] = useState({ left: -1000, top: -1000 });
-    const [opacity, setOpacity] = useState(0);
+    const [isLoading, setIsLoading] = useState(true);
 
-    const handleMouseMove = () => {
-        setOpacity(1)
-        setPotion({
-            left: x - width / 2,
-            top: y - height / 2
-        })
+    // Simulate a delay for demonstration purposes (you can replace this with your actual loading logic)
+    useEffect(() => {
+        setTimeout(() => {
+            setIsLoading(false);
+        }, 2000); // Simulating a 3-second loading time
+    }, []);
+
+    if(isLoading){
+        return <Loading/>
     }
-    const handleMouseLeave = () => {
-        setOpacity(0)
-    }
-    console.log(position)
     return (
-        <div
-            onMouseMove={handleMouseMove}
-            onMouseLeave={handleMouseLeave}
-            className='w-full h-full relative overflow-hidden'
-            ref={containerEl}
-        >
+        <div className="relative">
             <Navbar />
             <ScrollRestoration />
-            <Outlet />
-            <div
-                ref={circle}
-                className='absolute bg-primary bg-opacity-80 scale-[1.5] blur-3xl w-20 h-20 rounded-full duration-300 -z-10 transition-opacity hidden md:block'
-                style={{
-                    top: position.top,
-                    left: position.left,
-                    opacity
-                }}
-            >
+            <div className="">
+                <Outlet />
             </div>
+            <Footer />
+            <Toaster />
         </div>
     );
 };

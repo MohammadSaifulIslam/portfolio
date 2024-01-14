@@ -11,13 +11,13 @@ const router = createBrowserRouter([
         {
           path : '/',
           element: <Home/>
-        },
-        {
-          path : '/projects',
-          element: <ProjectPage/>
-        },
+        }
       ]
     },
+    {
+      path : '/projects',
+      element: <ProjectPage/>
+    }
   ]);
 
 export default router;

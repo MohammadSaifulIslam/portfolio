@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Element } from 'react-scroll';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import BlogCard from './BlogCard/BlogCard';
 
@@ -10,7 +11,9 @@ const Blog = () => {
             .then(data => setBlogs(data))
     }, [])
     return (
-        <section className='py-20 bg-secondary'>
+
+   <Element name='blog'> 
+         <section id='blog' className='py-20 bg-secondary'>
             <div className='my-container'>
                 <SectionTitle
                     subTitle={'My Blogs'}
@@ -29,7 +32,7 @@ const Blog = () => {
                                     <p>April 10, 2023</p>
                                     <p>min {blogData.readingMinutes}</p>
                                 </div>
-                                <p className='text-neutral'>{blogData.blog.slice(0,415)}.</p>
+                                <p className='text-neutral'>{blogData.blog.slice(0, 415)}.</p>
                             </div>
                         </div>)
                     }
@@ -44,6 +47,8 @@ const Blog = () => {
                 </div>
             </div>
         </section>
+   </Element>
+
     );
 };
 

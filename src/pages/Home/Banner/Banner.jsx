@@ -1,8 +1,20 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const Banner = () => {
+    useEffect(() => {
+        AOS.init({
+            offset: 200,
+            duration: 600,
+            easing: 'ease-in-sine',
+            delay: 100,
+        });
+    })
     return (
-        <section className="bg-secondary">
-            <div className="my-container min-h-[calc(100vh-96px)] text-left flex flex-col justify-center text-white space-y-4">
+        <section id='banner' className="bg-secondary">
+            <div data-aos="fade-up" data-aos-once={true}
+                className="my-container min-h-[calc(100vh-96px)] text-left flex flex-col justify-center text-white space-y-4">
                 <h4 className="text-xl text-primary font-medium">Hello, I am </h4>
                 <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold">MD. Saiful Islam</h1>
 

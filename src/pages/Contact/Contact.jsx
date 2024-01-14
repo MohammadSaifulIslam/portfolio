@@ -1,8 +1,14 @@
+import { toast } from "react-hot-toast";
 import { HiOutlineLocationMarker, HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 const Contact = () => {
+    const handleSubmit = event =>{
+        event.preventDefault();
+        toast.success('Thanks your message.')
+
+    }
     return (
-        <section className="py-20 bg-accent">
+        <section id="contact" className="py-20 bg-accent">
             <div className="my-container">
                 <SectionTitle
                     subTitle={'Contact'}
@@ -42,13 +48,13 @@ const Contact = () => {
                     </div>
                     <div>
                         <h4 className="text-xl font-semibold text-white mb-5">Let's Talk. I would love to hear from you</h4>
-                        <form>
+                        <form onSubmit={handleSubmit}>
                             <div className="flex gap-5">
                                 <input type="text" placeholder="Your Name" className="contact-input" required />
                                 <input type="email" placeholder="Your Email" className="contact-input" required />
                             </div>
                             <input type="text" placeholder="Your Subject" className="contact-input my-5" required />
-                            <textarea name="" id="" cols="30" rows="5" placeholder="Your Message" className="contact-input" required></textarea>
+                            <textarea id="" cols="30" rows="5" placeholder="Your Message" className="contact-input" required></textarea>
                             <button className="my-btn mt-5">Send</button>
                         </form>
                     </div>
